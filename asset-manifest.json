@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a3d684df.css",
+    "main.js": "/static/js/main.57c78df3.js",
+    "static/js/787.8caf36cd.chunk.js": "/static/js/787.8caf36cd.chunk.js",
+    "static/media/Project1.png": "/static/media/Project1.a95612db86f5f73042fa.png",
+    "static/media/Project2.png": "/static/media/Project2.5bcb692946739fc04c30.png",
+    "static/media/Project3.png": "/static/media/Project3.efff55b27bc439fc2125.png",
+    "static/media/reactlogo.png": "/static/media/reactlogo.0cf951a69d8e58f83f9d.png",
+    "static/media/nodelogo.png": "/static/media/nodelogo.952a9ea986dcfa5229ad.png",
+    "static/media/githublogo.png": "/static/media/githublogo.3b9e32903aa89111875d.png",
+    "static/media/htmllogo.png": "/static/media/htmllogo.2ba4fabc69a89a8f71e6.png",
+    "static/media/chakralogo.png": "/static/media/chakralogo.be115b2a2bfe791e050c.png",
+    "static/media/csslogo.png": "/static/media/csslogo.69a82c2d9e45c933a9cb.png",
+    "static/media/javascriptlogo.png": "/static/media/javascriptlogo.1ccd6ef9bb1f9c84ef00.png",
+    "index.html": "/index.html",
+    "main.a3d684df.css.map": "/static/css/main.a3d684df.css.map",
+    "main.57c78df3.js.map": "/static/js/main.57c78df3.js.map",
+    "787.8caf36cd.chunk.js.map": "/static/js/787.8caf36cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3d684df.css",
+    "static/js/main.57c78df3.js"
+  ]
+}
