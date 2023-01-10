@@ -131,7 +131,9 @@
   padding-top: 70px;
 }
 .HeaderArea-dark{
-  background-color: rgb(29,36,38);
+  /* background-color: rgb(29,36,38); */
+  background-image: url(https://c0.wallpaperflare.com/preview/672/984/942/laptop-computer-keyboard-technology.jpg);
+  
   display: flex;
   gap: 80px;
   margin-top: 0px;
