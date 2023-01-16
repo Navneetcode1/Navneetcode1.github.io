@@ -5,6 +5,7 @@ import Projects from "./Components/Projects"
 import ProfileContainer from "./Components/ProfileContainer"
 import Skills from "./Components/Skills"
 import Contact from "./Components/Contact"
+import Calender from './Components/Calender';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
      <About/>
      <Projects/>
      <Skills/>
+     <Calender/>
      <Contact/>
     </div>
   );

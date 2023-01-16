@@ -41,12 +41,7 @@ const scrollToHome = () => {
     });
     
     }
-    const scrollToResume=()=>{
-      window.scrollTo({
-        top:200000,
-        behavior:"smooth"
-      })
-  };
+
   return (
     <>
     <Box className='Laptop-view'>
@@ -58,9 +53,10 @@ const scrollToHome = () => {
           <Heading as='h3' className='Link_btns-dark' onClick={scrollToProjects}>Projects</Heading>
           <Heading as='h3' className='Link_btns-dark' onClick={scrollToSkills}>Skills</Heading>
           <Heading as='h3' className='Link_btns-dark' onClick={scrollToContact}>Contact</Heading>
-          <Heading as="h4" className='Link_btns-dark'  onClick={scrollToResume}>Resume</Heading>
+          <a href="https://drive.google.com/file/d/1itS6azP58xHqeWGK68fR6s32DrJm352F/view?usp=sharing">
+          <Heading textDecoration="none" color="white" as="h4" className='Link_btns-dark'>Resume</Heading></a>
           </Flex>
-        </Box> 
+        </Box> ``
       </Box>
     </>
   )
