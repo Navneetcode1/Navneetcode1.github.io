@@ -44,7 +44,7 @@ const scrollToHome = () => {
 
   return (
     <>
-    <Box className='Laptop-view' id=".nav-link.home">
+    <Box className='Laptop-view' id="nav-menu">
       <Box display='flex' >
         <p style={{fontSize:'40px',margin: '0px',marginLeft: '20px',fontFamily: 'cursive'}}>Navneet</p>
          <Flex gap={60}  margin='auto auto auto auto' >
