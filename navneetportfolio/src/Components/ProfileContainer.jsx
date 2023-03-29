@@ -28,7 +28,7 @@ const ProfileContainer = () => {
         </Flex>
       
         <Box marginLeft='-8%'>
-          <Image src='https://avatars.githubusercontent.com/u/110229662?v=4' zIndex="100%" blur="3xl" alt='Navneet Burman' className='photo_image' size={['sm', 'md', 'lg', '4xl']}/>
+          <Image  src='https://avatars.githubusercontent.com/u/110229662?v=4' zIndex="100%" blur="3xl" alt='Navneet Burman' className='photo_image' size={['sm', 'md', 'lg', '4xl']}/>
         </Box>
         
       </div>

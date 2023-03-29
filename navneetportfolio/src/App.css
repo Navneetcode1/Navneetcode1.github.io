@@ -133,13 +133,14 @@
 .HeaderArea-dark{
   /* background-color: rgb(29,36,38); */
   background-image: url(https://c0.wallpaperflare.com/preview/672/984/942/laptop-computer-keyboard-technology.jpg);
-  
   display: flex;
   gap: 80px;
+  /* filter: blur(1px); */
   margin-top: 0px;
   padding: 20px;
   padding-top: 90px;
   color: white;
+  /* z-index: 9999999; */
   animation: fadeIn 15s;
   transition: opacity 1s ease;
 }
