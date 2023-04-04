@@ -13,7 +13,7 @@ import Project3 from "../Images/Project3.png"
 const Projects = () => {
 
   return (
-    <Box className="Project_Box-dark">
+    <Box className="projects">
       <Box paddingBottom="10px">
       <Heading ml={{base:"5%",md:"10%",lg:"50%"}} as='h1' width="12%" marginLeft='10%' borderBottom='4px solid #a1a1a1'>Portfolio</Heading>
       <Text style={{fontWeight:"bold",marginLeft:'10%'}}>Check out some of my work right here</Text>
