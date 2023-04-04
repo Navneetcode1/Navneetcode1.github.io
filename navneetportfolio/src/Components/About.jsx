@@ -6,7 +6,7 @@ import {Box,Heading,Text} from '@chakra-ui/react'
 const About = () => {
 
   return (
-    <Box className="About_style-dark" > 
+    <Box className="About_style-dark" id="about" class="about section"> 
     
         <Heading ml={{base:"5%",md:"10%",lg:"50%"}} as='h1' width="13%" marginLeft='10%' borderBottom='4px solid #a1a1a1' mt='0px'>About Me</Heading>
         <Box className='About_box' data-aos="fade-up">

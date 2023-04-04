@@ -48,7 +48,7 @@ const scrollToHome = () => {
       <Box display='flex' >
         <p style={{fontSize:'40px',margin: '0px',marginLeft: '20px',fontFamily: 'cursive'}}>Navneet</p>
          <Flex gap={60}  margin='auto auto auto auto' >
-          <Heading as='h3' className='Link_btns-dark' onClick={scrollToHome}>Home</Heading>
+          <Heading as='h3' className='Link_btns-dark' id="home" onClick={scrollToHome}>Home</Heading>
           <Heading as='h3' className='Link_btns-dark' onClick={scrollToAbout}>AboutMe</Heading>
           <Heading as='h3' className='Link_btns-dark' onClick={scrollToProjects}>Projects</Heading>
           <Heading as='h3' className='Link_btns-dark' onClick={scrollToSkills}>Skills</Heading>
