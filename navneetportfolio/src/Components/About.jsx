@@ -10,7 +10,7 @@ const About = () => {
     
         <Heading ml={{base:"5%",md:"10%",lg:"50%"}} as='h1' width="13%" marginLeft='10%' borderBottom='4px solid #a1a1a1' mt='0px'>About Me</Heading>
         <Box className='About_box' data-aos="fade-up" class="nav-link about">
-        <Box>
+        <Box id="user-detail-intro">
         <Text>
         Hello! My name is Navneet Burman & I enjoy creating things that live on the internet. I'm a passionate Developer, with strong administrative & communication skills, good attention to details & the ability to write efficient code.
         </Text>
