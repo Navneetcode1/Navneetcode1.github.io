@@ -21,7 +21,7 @@ const Skills = () => {
 
   return (
     <div className='skillBox-dark' id="skills"  class="skills-card-img">
-    <Box className="skillBoxName-dark" class="nav-link skills"  class="skills-card-img">
+    <Box className="skillBoxName-dark" class="nav-link skills">
       <Heading ml={{base:"5%",md:"10%",lg:"50%"}} as='h1' width="7%" marginLeft='10%' borderBottom='4px solid #a1a1a1'>Skills</Heading>
       <Text  style={{fontWeight:"bold",marginLeft:'10%'}}>These are the technologies I've worked with</Text>
       </Box>
