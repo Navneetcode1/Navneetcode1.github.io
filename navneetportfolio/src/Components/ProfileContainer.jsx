@@ -10,7 +10,7 @@ import {BsGithub} from "react-icons/bs"
 const ProfileContainer = () => {
 
   return (
-    <div className='HeaderArea-dark' >
+    <Box className='HeaderArea-dark' >
       
         <Flex flexDirection='column' align='center' padding={20} className='profileBx1'>
         <Box> 
@@ -31,7 +31,7 @@ const ProfileContainer = () => {
           <Image  src='https://avatars.githubusercontent.com/u/110229662?v=4' zIndex="100%" blur="3xl" alt='Navneet Burman' className='photo_image' size={['sm', 'md', 'lg', '4xl']}/>
         </Box>
         
-      </div>
+      </Box>
       
   )
 }

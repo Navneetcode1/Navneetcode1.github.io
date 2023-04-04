@@ -44,7 +44,7 @@ const scrollToHome = () => {
 
   return (
    
-    <Box className='Laptop-view' id="nav-menu">
+    <div className='Laptop-view' id="nav-menu">
       <Box display='flex' >
         <p style={{fontSize:'40px',margin: '0px',marginLeft: '20px',fontFamily: 'cursive'}}>Navneet</p>
          <Flex gap={60}  margin='auto auto auto auto' >
@@ -57,7 +57,7 @@ const scrollToHome = () => {
           <Heading textDecoration="none" color="white" as="h4" className='Link_btns-dark'>Resume</Heading></a>
           </Flex>
         </Box> ``
-      </Box>
+      </div>
    
   )
 }
