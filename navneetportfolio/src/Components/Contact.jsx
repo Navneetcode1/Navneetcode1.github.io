@@ -8,7 +8,7 @@ const Contact = () => {
 
   return (
     <Box className='contact' >
-        <Box className='box2a'>
+        <Box className='box2a' class="nav-link contact">
         <Input className='box2aInput' placeholder='Enter Name'></Input>
         <Input className='box2aInput' placeholder='Enter Email Address'></Input>
         <Textarea className='box2aInput' placeholder='Enter Your Message' type="textarea"></Textarea>
