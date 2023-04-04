@@ -4,9 +4,9 @@ import GitHubCalendar from 'react-github-calendar'
 
 const Calender = () => {
   return (
-    <div className='calender-dark'>
-        <Box paddingBottom="0px" pt='20px'>
-      <Heading className='statHeading' as='h1' borderBottom='4px solid #a1a1a1'>Calendar & Stats</Heading>
+    <div className='calender-dark' class="react-activity-calendar">
+        <Box paddingBottom="0px" pt='20px' class="react-activity-calendar">
+      <Heading className='statHeading' as='h1' borderBottom='4px solid #a1a1a1' class="react-activity-calendar">Calendar & Stats</Heading>
       <Text className='statHeading' pb="25px" >Check out my Github Calendar & Streak Stats</Text>
       </Box>
       <Box style={{textAlign:'center'}} className='calanderBox' data-aos="fade-up">

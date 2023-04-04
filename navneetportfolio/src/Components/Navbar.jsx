@@ -53,8 +53,8 @@ const scrollToHome = () => {
           <Heading as='h3' className='Link_btns-dark' id="projects" class="nav-link projects" onClick={scrollToProjects}>Projects</Heading>
           <Heading as='h3' className='Link_btns-dark' id="skills" class="nav-link skills" onClick={scrollToSkills}>Skills</Heading>
           <Heading as='h3' className='Link_btns-dark' id="contact" class="nav-link contact" onClick={scrollToContact}>Contact</Heading>
-          <a href="https://drive.google.com/file/d/1itS6azP58xHqeWGK68fR6s32DrJm352F/view?usp=sharing">
-          <Heading textDecoration="none" color="white" as="h4" className='Link_btns-dark'  class="nav-link resume">Resume</Heading></a>
+          <a id="resume-link-1" href="https://drive.google.com/file/d/1itS6azP58xHqeWGK68fR6s32DrJm352F/view?usp=sharing">
+          <Heading textDecoration="none" color="white" as="h4" className='Link_btns-dark'  class="nav-link resume"  id="resume-button-1">Resume</Heading></a>
           </Flex>
         </Box> 
       </div>
