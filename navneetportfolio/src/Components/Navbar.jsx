@@ -43,7 +43,7 @@ const scrollToHome = () => {
     }
 
   return (
-    <>
+   
     <Box className='Laptop-view' id="nav-menu">
       <Box display='flex' >
         <p style={{fontSize:'40px',margin: '0px',marginLeft: '20px',fontFamily: 'cursive'}}>Navneet</p>
@@ -58,7 +58,7 @@ const scrollToHome = () => {
           </Flex>
         </Box> ``
       </Box>
-    </>
+   
   )
 }
 
