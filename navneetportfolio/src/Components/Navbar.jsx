@@ -52,7 +52,7 @@ const scrollToHome = () => {
           <Heading as='h3' className='Link_btns-dark' id="about" class="about-section" onClick={scrollToAbout}>AboutMe</Heading>
           <Heading as='h3' className='Link_btns-dark' id="projects" onClick={scrollToProjects}>Projects</Heading>
           <Heading as='h3' className='Link_btns-dark' id="skills" onClick={scrollToSkills}>Skills</Heading>
-          <Heading as='h3' className='Link_btns-dark' onClick={scrollToContact}>Contact</Heading>
+          <Heading as='h3' className='Link_btns-dark' id="contact" onClick={scrollToContact}>Contact</Heading>
           <a href="https://drive.google.com/file/d/1itS6azP58xHqeWGK68fR6s32DrJm352F/view?usp=sharing">
           <Heading textDecoration="none" color="white" as="h4" className='Link_btns-dark'  class="nav-link resume">Resume</Heading></a>
           </Flex>

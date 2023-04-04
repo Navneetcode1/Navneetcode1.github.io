@@ -7,7 +7,7 @@ import {AiOutlineCopyright} from 'react-icons/ai'
 const Contact = () => {
 
   return (
-    <Box className='contact' >
+    <Box className='contact' id="contact" >
         <Box className='box2a' class="nav-link contact">
         <Input className='box2aInput' placeholder='Enter Name'></Input>
         <Input className='box2aInput' placeholder='Enter Email Address'></Input>
