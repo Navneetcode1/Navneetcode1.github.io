@@ -21,9 +21,9 @@ const Skills = () => {
 
   return (
     <div className='skillBox-dark' id="skills"  class="skills-card-img">
-    <Box className="skillBoxName-dark" class="nav-link skills">
-      <Heading ml={{base:"5%",md:"10%",lg:"50%"}} as='h1' width="7%" marginLeft='10%' borderBottom='4px solid #a1a1a1'>Skills</Heading>
-      <Text  style={{fontWeight:"bold",marginLeft:'10%'}}>These are the technologies I've worked with</Text>
+    <Box className="skillBoxName-dark" class="nav-link skills" id="github-top-langs">
+      <Heading ml={{base:"5%",md:"10%",lg:"50%"}} as='h1' width="7%" marginLeft='10%' borderBottom='4px solid #a1a1a1' id="github-top-langs">Skills</Heading>
+      <Text id="github-top-langs" style={{fontWeight:"bold",marginLeft:'10%'}}>These are the technologies I've worked with</Text>
       </Box>
         <div className="skills_box-dark"  class="skills-card-img">
         <div className='npmhover'  class="skills-card-img"> 
@@ -34,11 +34,11 @@ const Skills = () => {
             <img  class="skills-card-img"src={csslogo} alt="HTML" height='50%'/>
             <Heading mt='10px'>CSS</Heading>
         </div>
-        <div className='npmhover'> 
+        <div className='npmhover' id="github-top-langs"> 
             <img src={javascriptlogo} alt="HTML" height='50%'/>
             <Heading mt='10px'>JavaScript</Heading>
         </div>
-        <div className='npmhover'> 
+        <div className='npmhover' id="github-top-langs"> 
             <img src={reactlogo} alt="HTML" height='50%'/>
             <Heading mt='10px'v>React</Heading>
         </div>

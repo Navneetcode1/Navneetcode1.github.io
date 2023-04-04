@@ -45,7 +45,7 @@ const scrollToHome = () => {
   return (
    
     <div className='Laptop-view' id="nav-menu">
-      <Box display='flex' >
+      <Box display='flex' id="nav-menu" >
         <p style={{fontSize:'40px',margin: '0px',marginLeft: '20px',fontFamily: 'cursive'}}>Navneet</p>
          <Flex gap={60}  margin='auto auto auto auto' >
           <Heading as='h3'  className='Link_btns-dark' id="home" class="nav-link home" onClick={scrollToHome}>Home</Heading>
