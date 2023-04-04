@@ -15,7 +15,7 @@ const ProfileContainer = () => {
         <Flex flexDirection='column' align='center' padding={20} className='profileBx1'>
         <Box> 
          <Text>Hello I'm</Text> 
-        <Heading margin={-5} className="mainHeading">Navneet Burman</Heading>
+        <Heading margin={-5} className="mainHeading"  id="user-detail-name">Navneet Burman</Heading>
         <Heading as='h3' size={['sm', 'md', 'lg', 'xl']} >Full Stack Web Developer</Heading>
         </Box>
         <HStack fontSize='60px' className='icons' data-aos="fade-right">
