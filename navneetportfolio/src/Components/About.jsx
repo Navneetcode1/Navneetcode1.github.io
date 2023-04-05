@@ -21,7 +21,7 @@ const About = () => {
         I have clear, logical mind with a practical approach to problem-solving and a drive to see things through to completion. I have work experience in multiple project and clone project with team collaboration.
         </Text>
         <a id="resume-link-2"  href="https://drive.google.com/file/d/1itS6azP58xHqeWGK68fR6s32DrJm352F/view?usp=sharing">
-          <Text id="resume-button-2">Resume</Text>
+          <Text id="resume-button-2">Resume</Text><BiDownload />
         </a>
        
        
