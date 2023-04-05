@@ -153,12 +153,12 @@
   z-index: 200;
   display: inline;
 }
-.Link_btns-dark{
+.nav-link about{
   cursor: pointer;
   margin-bottom: 10px;
   display: inline-block;
 }
-.Link_btns-dark::after{
+.nav-link about::after{
   content: '';
   display: block;
   width: 0;
