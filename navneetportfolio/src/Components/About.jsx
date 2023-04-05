@@ -1,35 +1,202 @@
-import React from 'react'
-import '../App.css' 
-import {Box,Heading,Text} from '@chakra-ui/react'
+import React, { useEffect } from "react";
+import {
+  Box,
+  Heading,
+  Link,
+  Image,
+  Text,
+  Divider,
+  HStack,
+  Tag,
+  Wrap,
+  WrapItem,
+  SpaceProps,
+  useColorModeValue,
+  Container,
+  VStack,
+  Flex,
+  Button,
+  useColorMode,
+} from "@chakra-ui/react";
 
+import Fade from "react-reveal/Fade";
+
+const BlogTags = (props) => {
+  return (
+    <HStack spacing={2} marginTop={props.marginTop}>
+      {props.tags.map((tag) => {
+        return (
+          <Tag size={"md"} variant="solid" colorScheme="orange" key={tag}>
+            {tag}
+          </Tag>
+        );
+      })}
+    </HStack>
+  );
+};
+
+export const BlogAuthor = (props) => {
+  return (
+    <HStack marginTop="2" spacing="2" display="flex" alignItems="center">
+      <Image
+        borderRadius="full"
+        boxSize="40px"
+        src="https://100k-faces.glitch.me/random-image"
+        alt={`Avatar of ${props.name}`}
+      />
+      <Text fontWeight="medium">{props.name}</Text>
+      <Text>—</Text>
+      <Text>{props.date.toLocaleDateString()}</Text>
+    </HStack>
+  );
+};
 
 const About = () => {
-
+  const { colorMode, toggleColorMode } = useColorMode(false);
   return (
-    <Box className="about section" id="about"  class="nav-link about"  > 
-    
-        <Heading ml={{base:"5%",md:"10%",lg:"50%"}} as='h1' width="13%" marginLeft='10%' borderBottom='4px solid #a1a1a1' mt='0px'  class="nav-link home" id="user-detail-intro">About Me</Heading>
-        <Box className='About_box' data-aos="fade-up" class="nav-link about">
-        <Box id="user-detail-intro">
-        <Text>
-        Hello! My name is Navneet Burman & I enjoy creating things that live on the internet. I'm a passionate Developer, with strong administrative & communication skills, good attention to details & the ability to write efficient code.
-        </Text>
-        <Text>
-        My field of interest are building new Web Technologies and Products and also in areas related to Deep Learning and Natural Launguage Processing.
-        </Text>
-        <Text>
-        I have clear, logical mind with a practical approach to problem-solving and a drive to see things through to completion. I have work experience in multiple project and clone project with team collaboration.
-        </Text>
-        <a id="resume-link-2"  href="https://drive.google.com/file/d/1itS6azP58xHqeWGK68fR6s32DrJm352F/view?usp=sharing">
-          <Text id="resume-button-2">Resume</Text><BiDownload />
-        </a>
-       
-       
-        </Box>
-        </Box>
-      
-    </Box>
-  )
-}
+    <>
+      <Box h={{ base: "60px", sm: "90px" }}></Box>
+      <Container
+        maxW={{ base: "97%", lg: "90%" }}
+        id="about"
+        className="about section"
+        p={{ base: "2", sm: "12" }}
+        textAlign="center"
+      >
+        <Fade bottom>
+          <Heading mb={"10"} as="h1">
+            About Me
+          </Heading>
+        </Fade>
+        <Fade bottom>
+          <Flex
+            w={"90%"}
+            m="auto"
+            direction={{ base: "column", lg: "row" }}
+            bg={useColorModeValue("white", "gray.800")}
+            borderRadius="20px"
+            p="20px"
+            textAlign={"left"}
+            boxShadow={
+              colorMode === "light"
+                ? "rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                : "rgba(230, 250, 255, 0.56) 0px 22px 70px 4px;"
+            }
+            // marginTop={{ base: "5", sm: "5" }}
+            mt="60px"
+            justifyContent={{ base: "center", lg: "space-between" }}
+          >
+            <Box marginRight="3">
+              <Flex
+                width={{ base: "60%", md: "40%", lg: "85%" }}
+                justifyContent={"center"}
+                textAlign={"center"}
+                borderRadius={"50%"}
+                m="auto"
+                zIndex="2"
+              >
+                <Image
+                  textAlign={"center"}
+                  class="home-img"
+                  src="https://avatars.githubusercontent.com/u/110229662?v=4"
+                  
+                  border="1px solid white"
+                  alt="some good alt text"
+                  // objectFit="cover"
+                />
+              </Flex>
+            </Box>
+            <Flex
+              // border={"5px solid red"}
+              w={{ base: "100%", lg: "70%" }}
+              mt={{ base: "40px", lg: "0px" }}
+              flexDirection="column"
+              justifyContent="center"
+            >
+              {/* <BlogTags tags={['Engineering', 'Product']} /> */}
+              <Flex
+                direction={{ base: "column", md: "row" }}
+                justifyContent={"space-between"}
+                textAlign="center"
+                marginBottom={"20px"}
+              >
+                <Box
+                  // w="30%"
+                  w={{ base: "100%", md: "30%" }}
+                  mt={{ base: "30px", md: "0px" }}
+                  padding={"18px"}
+                  borderRadius="9px"
+                  boxShadow={
+                    colorMode === "light"
+                      ? "rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                      : "rgba(230, 250, 255, 0.56) 0px 22px 70px 4px;"
+                  }
+                >
+                  <Text>1200+ Hours</Text>
+                  <Text>Full Stack Coding</Text>
+                </Box>
 
-export default About
+                <Box
+                  w={{ base: "100%", md: "30%" }}
+                  mt={{ base: "30px", md: "0px" }}
+                  padding={"18px"}
+                  borderRadius="9px"
+                  boxShadow={
+                    colorMode === "light"
+                      ? "rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                      : "rgba(230, 250, 255, 0.56) 0px 22px 70px 4px;"
+                  }
+                >
+                  <Text>4+ Major Projects</Text>
+                  <Text>30+ Mini Projects</Text>
+                </Box>
+
+                <Box
+                  w={{ base: "100%", md: "30%" }}
+                  mt={{ base: "30px", md: "0px" }}
+                  padding={"18px"}
+                  borderRadius="9px"
+                  boxShadow={
+                    colorMode === "light"
+                      ? "rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                      : "rgba(230, 250, 255, 0.56) 0px 22px 70px 4px;"
+                  }
+                >
+                  <Text>100+ Hours</Text>
+                  <Text>Soft Skills</Text>
+                </Box>
+              </Flex>
+              <Heading marginTop="1">
+                <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
+                  Summary
+                </Link>
+                {/* <Button
+                id="resume-button-2"
+                colorScheme="teal"
+                size="md"
+              ></Button> */}
+              </Heading>
+              <Text
+                as="p"
+                marginTop="2"
+                color={useColorModeValue("gray.700", "gray.200")}
+                fontSize="lg"
+                id="user-detail-intro"
+              >
+                I am a Full Stack Developer in MERN stack having good knowledge
+                o Express, MongoDB, JavaScript, HTML, CSS, etc. I am passionate
+                about learning new technologies and aiming to create world-class
+                web applications while facilitating organizations in achieving
+                ambitious goals.
+              </Text>
+              {/* <BlogAuthor name="John Doe" date={new Date('2021-04-06T19:01:27Z')} /> */}
+            </Flex>
+          </Flex>
+        </Fade>
+        <Divider marginTop="20" />
+      </Container>
+    </>
+  );
+};
+
+export default About;

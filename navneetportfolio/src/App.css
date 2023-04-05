@@ -1,279 +1,136 @@
-.Navbar_box{
-  background-image: linear-gradient(to right,rgb(249, 227, 227),white,rgb(243, 218, 218));
-  height: 60px;
-  position: fixed;
-  width: 100%;
-  z-index: 200;
-  display: inline;
-}
-.navbar_line{
-  height: 5px;
-  background-color: white;
-  width: 0;
-  transition: 1ms;
-}
-.Link_btns{
-  cursor: pointer;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-.Link_btns::after{
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  transition:3s;
-  transition: width .3s;
-  background: #000;
-}
-.HeaderArea{
-  display: flex;
-  gap: 80px;
-  margin-top: 0px;
-  opacity: 100%;
-  padding: 20px;
-  padding-top: 90px;
-  background-image: linear-gradient(to right 
-  ,white,#edfefe,white,#edfefe,white);
-}
-.icons{
-  font-size: 60px;
-}
-.photo_image{
-  border: 2px solid black;
-  border-radius: 50%;
-  height: 300px;
-  margin-top: 50px;
-}
-.About_box{
-  width: 70%;
-  margin: auto;
-  padding: 20px;
-  margin-top: -5px;
-  font-size: 20px;
-}
-.Hello_Style{
-  background-color: blue;
-  width: 70px;
-  padding: 5px;
-  color: white;
-  border-top-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.box{
-  width: 200px;
-  height: 200px;
-  border-radius: 20px;
-  z-index: 9;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  text-align: center;
-  background-color: white;
-  position: relative;
-}
-.box:hover{
-  transform: scale(0.9)
-}
-.Resume_btn{
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 15px;
-  color:white;
-  background-color: blue;
-  border:2px solid blue;
-  cursor: pointer;
-  font-size:15px
-}
-.Resume_btn:hover{
-  transform: scale(1.1)
-}
+@import url('https://fonts.googleapis.com/css?family=Corben:700');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
 
-.npmhover:hover{
-  box-shadow: rgb(0 0 0 / 5%) 0px 1px 2px, rgba(6, 6, 6, 0.08) 0px 2px 4px, rgba(0, 0, 0, 0.83) 0px 4px 8px, rgba(5, 5, 5, 0.7) 0px 8px 16px, rgb(242 15 15 / 0%) 0px 16px 32px, rgb(255 6 6 / -45%) 0px 32px 64px;
+.fontClass{
+  font-family: 'Delicious Handrawn', cursive;
 }
 
 
-.ArrowStyle{
-  font-size: 30px;
-  padding: 5px;
-  border-radius: 50%;
-  background-color:black;
-  color: white;
-  margin: 0px;
-  border: none;
-}
-.ArrowStyle:hover{
-  box-shadow: rgba(44, 7, 228, 0.35) 0px 5px 15px;
-}
-.boxa{
-  display: none;
-  gap: 84px;
-  width: 88%;
-  margin: auto;
-  margin-left: 145px;
-  margin-top: 0px;
+
+.eye {
   position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(48, 48, 48);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
+  top: 20%;
+  left: 10%;
+  transform: translate(-50%, -50%);
 }
-.box2a{
+
+.iris {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  width: 30%;
-  margin: auto;
-}
-.box2aInput{
-  margin: 15px;
-  padding: 10px;
-  border-radius: 10px;
-}
-.about section{
-  background-color: rgb(29,36,38);
-  color: white;
-  padding-top: 70px;
-}
-.HeaderArea-dark{
-  /* background-color: rgb(29,36,38); */
-  background-image: url(https://c0.wallpaperflare.com/preview/672/984/942/laptop-computer-keyboard-technology.jpg);
-  display: flex;
-  gap: 80px;
-  /* filter: blur(1px); */
-  margin-top: 0px;
-  padding: 20px;
-  padding-top: 90px;
-  color: white;
-  /* z-index: 9999999; */
-  animation: fadeIn 15s;
-  transition: opacity 1s ease;
-}
-.Navbar_box-dark{
-  background: linear-gradient(180deg, rgba(2,1,13) 16%, rgba(0,0,0,1) 54%, rgb(0, 0, 0) 99%);
-  color: white;
-  height: 60px;
-  position: fixed;
-  width: 100%;
-  z-index: 200;
-  display: inline;
-}
-.nav-link about{
-  cursor: pointer;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-.nav-link about::after{
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  transition: width .3s;
-  background: rgb(250, 250, 250);
-}
-.Link_btns-dark:hover::after{
-  width: 100%;
-}
-.box-dark{
-  color: white;
-  background-color: black;
-  width: 200px;
-  height: 200px;
-  border-radius: 20px;
-  z-index: 9;
-  box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  text-align: center;
-  position: relative;
-}
-.box:hover{
-  transform: scale(0.9)
-}
-.box2-dark{
-  height: 310px;
-}
-.HeaderArea2{
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
   color: white;
 }
-.mainHeading{
-  color: white;
-  font-size: 60px;
+
+.App-link {
+  color: #61dafb;
 }
-.profileBx1{
-  width: 60%;
-  
+
+.box{
+  animation: box 1s ease-in-out 0s 1 forwards;
 }
-.lastBox{
-  width: 30%;
-  margin: auto;
-  color: white;
-  margin-top: -20px;
-}
-.lastBox2{
-  margin-top: 110px;
-  font-size: 45px;
-}
-.footerLogo{
-  color: white;
-}
-.footerLogo:hover{
-  /* animation: fadeUP 1s; */
-  transform: scale(1.4);
-  transition: 0.1s;
-  /* transition: opacity 1s ease; */
+
+@keyframes box {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 
-
-
-
-
-
-
-
-
-
-/* *********************  Optimization  ************************** */
-
-
-
-
-
-@media only screen and (max-width: 640px) {
-.mainHeading{
-  font-size: 45px;
-}
-.profileBx1{
-  width: 45%;
-}
-.icons{
-  margin-top: 10px;
-  width: 50%;
-  margin-left: -50px;
-}
-.HeaderArea{  
-  gap: 28px;
-}
-.About_box{
-  width: 80%;
-}
-.HeaderArea-dark{  
-  gap: 0px;
-  width: 100;
-}
-.HeaderArea2{
-  width: 50%;
-}
-.About_style-dark{
-  width: 100vw;
-  margin: auto;
-  margin-top: -5px;
-}
-.photo_image{
-  height: 200px;
-}
-.lastBox2{
-  margin-top: 0px;
-  font-size: 25px;
-  /* gap: 5px; */
-}
-.box2a{
-  margin-left: 10px;
-  width: 50%;
+.slideDown{
+  animation: slideDown 1s ease-in-out 0s 1 forwards;
 }
 
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform:translateY(0vh);
+  }
+}
+
+.slideLeft{
+  animation: slideLeft 1s ease-in-out 0s 1 forwards;
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform:translateX(0);
+  }
+}
+
+
+.slideRight{
+  animation: slideRight 1s ease-in-out 0s 1 forwards;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform:translateX(0);
+  }
+}
+
+.slideTop{
+  animation: slideTop 1s ease-in-out 0s 1 forwards;
+}
+
+@keyframes slideTop {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform:translateX(0);
+  }
 }

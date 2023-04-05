@@ -1,67 +1,80 @@
-import { Box,Heading,Text } from '@chakra-ui/react'
-import React from 'react'
-import "../Utils/Projects.css"
-import ProjectBox from '../Components/ProjectBox'
-import Project1 from "../Images/Project1.png"
-import Project2 from "../Images/Project2.png"
-import Project3 from "../Images/Project3.png"
-// import Project2 from "../Images/Project2.png"
-// import Project3 from "../Images/Project3.png"
-// import Project4 from "../Images/Project4.png"
+import { Box, Heading, SimpleGrid } from "@chakra-ui/react";
+import React, { useEffect } from "react";
+import HelperProject from "../Helper/HelperProject";
+import Fade from "react-reveal/Fade";
+import StyleVibe from "../Images/StyleVibe.png"
+import Myntra from "../Images/Myntra.png"
+import SurveyMonkey from "../Images/SurveyMonkey.png"
+
 
 
 const Projects = () => {
-
   return (
-    <Box id="projects" className="projects"  class="project-card" >
-      <Box paddingBottom="10px" class="nav-link projects">
-      <Heading ml={{base:"5%",md:"10%",lg:"50%"}} as='h1' width="12%" marginLeft='10%' borderBottom='4px solid #a1a1a1'>Portfolio</Heading>
-      <Text style={{fontWeight:"bold",marginLeft:'10%'}}>Check out some of my work right here</Text>
-      </Box>
-      <Box className="Project_box_grid-dark">
-       <ProjectBox 
-      Images={Project1}
-      Name={"LifeStyle(clone)"}
-      TechStack={'tech stack here'}
-      liveUrl={"https://unique-pony-67ece1.netlify.app"}
-      descLine={"Cloned Lifestyle.com into a full dynamic layout and functional "}
-      techstacks={"HTML,CSS,JavaScript(Github)"}
-      codeUrl={'https://github.com/thedpmane/clone-lifestore.com'}
-      />
-
-      <ProjectBox
-      Name={"FarFetch(clone)"}
-      TechStack={''}
-      Images={Project2}
-      liveUrl={"https://moonlit-florentine-131caf.netlify.app/"}
-      techstacks={"JavaScript ,HTML, CSS and dynamic features(Github)"}
-      descLine={"An individual project of cloning far fetch.com"}
-      
-      codeUrl={'https://github.com/Navneetcode1/brawny-jam-9247'}
-      />
-
-      <ProjectBox 
-      Name={"SurveyMonkey(clone)"}
-      TechStack={'------------'}
-      Images={Project3}
-      liveUrl={"https://roaring-bublanina-916643.netlify.app/"}
-      techstacks={"React,Redux,Es6 functionality and JavaScript"}
-      descLine={"This was a collaborative project of cloning surveymonkey.com with maximum functionality"}
-      codeUrl={'https://github.com/Vishaltandale987/woozy-north-6172/tree/fw20_1349-day-4'}
-      />
-
-      {/* <ProjectBox 
-      Name={"---------"}
-      TechStack={'----------'}
-      Images={Project1}
-      liveUrl={"------------------"}
-      techstacks={"----------------------"}
-      descLine={"----------------------------------------------------------------------"}
-      codeUrl={'-----------------'}
-      />  */}
-      </Box>
+   
+    <Box id="projects" textAlign={"center"} pt="130px" mt={"10"}>
+      <Heading>
+        {" "}
+        <Fade bottom> Projects </Fade>
+      </Heading>
+      <SimpleGrid
+        justifyContent="center"
+        textAlign={"center"}
+        m={"auto"}
+        columns={{ base: "1", md: "2", xl: "3" }}
+        spacing={{ base: "10px", md: "40px" }}
+        w={{ base: "95%", md: "81%" }}
+        marginTop="70px"
+        marginBottom={"50px"}
+      >
+        {data.map((el, ind) => {
+          return <HelperProject key={Date.now() + ind} {...el} />;
+        })}
+      </SimpleGrid>
     </Box>
-  )
-}
+  );
+};
 
-export default Projects
+let data = [
+  {
+    image: StyleVibe,
+    desc: "Style Fashion is an full stack e-commerce platform to buy mens and womens clothing products.",
+    title: "Style Vibe",
+    techStack: ["React", "Chakra UI", "RazorPay", "Express", "MongoDB"],
+    github: "https://github.com/ParbhatKataria1/Style-Fashion",
+    deploy: "https://ephemeral-platypus-7df5f7.netlify.app/",
+  },
+  {
+    image:
+  Myntra,
+    title: "Myntra Clone",
+    desc: "It is a clothing product-based website which is used to order clothing stuff for men, women and kids",
+    techStack: ["React", "Chakra Ui", "JavaScript", "NodeJs"],
+    github: "https://github.com/Navneetcode1/animated-plants-4461",
+    deploy: "https://fashionmantra.vercel.app/",
+  },
+  {
+    image:
+      SurveyMonkey,
+    desc: "A website used for conducting and creating surveys in any topic",
+    title: "Survey Monkey Clone",
+    techStack: [ "React","Redux","Chakra Ui", "ES6" ],
+    github: "https://github.com/Vishaltandale987/woozy-north-6172",
+    deploy: "https://roaring-bublanina-916643.netlify.app/",
+  },
+  {
+    image: "https://github.com/thedpmane/clone-lifestylestore.com/blob/main/images/readmeImages/1.png?raw=true",
+    desc: "LifeStyle is an e-commerce platform to buy clothes and fashion products.",
+    title: "LifeStyle.com",
+    techStack: [
+      "HTML",
+      "CSS",
+      "Google Authentication",
+      
+      "JSON - Server",
+    ],
+    github: "https://github.com/thedpmane/clone-lifestylestore.com",
+    deploy: "https://clone-lifestylestore-com.vercel.app/index.html",
+  },
+];
+
+export default Projects;
