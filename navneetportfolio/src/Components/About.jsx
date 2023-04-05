@@ -41,7 +41,7 @@ export const BlogAuthor = (props) => {
       <Image
         borderRadius="full"
         boxSize="40px"
-        src="https://100k-faces.glitch.me/random-image"
+        // src="https://100k-faces.glitch.me/random-image"
         alt={`Avatar of ${props.name}`}
       />
       <Text fontWeight="medium">{props.name}</Text>

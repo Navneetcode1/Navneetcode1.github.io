@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import ContactForm from "../Helper/ContactForm";
 import Fade from "react-reveal/Fade";
-import AnimatedEyes from "../Helper/AnimateEyes";
+
 
 const Testimonial = ({ children }) => {
   return <Box>{children}</Box>;

@@ -26,8 +26,9 @@ function App() {
     <div style={{ marginTop: "0px" }}>
       <Box>
         <Navbar/>
-        <Home />
         <About />
+        <Home />
+        
         <Skills />
         <Projects />
         <Stats />

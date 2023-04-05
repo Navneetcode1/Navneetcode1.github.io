@@ -30,8 +30,7 @@ function AnimatedEyes() {
       <Flex w="70%" m={"auto"} justifyContent={"space-around"} display={"flex"}>
         <Flex
           display={"flex"}
-          //   justifyContent="center"
-          //   alignItems="center"
+          
           borderRadius={"50%"}
           bg="white"
           w="90px"
