@@ -26,9 +26,10 @@ import DrawerExample from "./SideBar";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Zoom from "react-reveal/Zoom";
+import SideBar from "./SideBar"
 
 function handleResume() {
-  window.location.href = `https://drive.google.com/file/d/1TkITqlIqwESdtQMTCnGRpxr0i92FUHx7/view?usp=sharing`;
+  window.location.href = `https://drive.google.com/uc?export=download&id=1TkITqlIqwESdtQMTCnGRpxr0i92FUHx7`;
 }
 
 const NavLink = ({ children }) => (
@@ -80,6 +81,7 @@ export default function Navbar() {
         boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"}
         top={"0px"}
       >
+      
         <Flex
           h={16}
           alignItems={"center"}
@@ -87,8 +89,9 @@ export default function Navbar() {
           m="auto"
           width={"94%"}
         >
+            <SideBar/>
           <Box className="fontClass" w={{ base: "50%" }} fontSize={"35px"}>
-            Navneet 
+            -------Navneet 
           </Box>
 
           <Flex

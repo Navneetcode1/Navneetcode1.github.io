@@ -12,6 +12,7 @@ import Projects from "./Components/Projects";
 import Stats from "./Components/Stats";
 import Contact from "./Components/Contact";
 import Skills from "./Components/Skills";
+// import SideBar from "./Components/SideBar"
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
     <div style={{ marginTop: "0px" }}>
       <Box>
         <Navbar/>
+        {/* <SideBar/> */}
         <About />
         <Home />
         

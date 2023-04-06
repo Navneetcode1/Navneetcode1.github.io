@@ -46,7 +46,7 @@ const Feature = ({ text, icon, iconBg }) => {
   );
 };
 function handleResume() {
-  window.location.href = `https://drive.google.com/file/d/1TkITqlIqwESdtQMTCnGRpxr0i92FUHx7/view?usp=sharing`;
+  window.location.href = `https://drive.google.com/uc?export=download&id=1TkITqlIqwESdtQMTCnGRpxr0i92FUHx7`;
 }
 
 export default function Home() {
