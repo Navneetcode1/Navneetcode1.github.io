@@ -243,7 +243,8 @@ export default function Navbar() {
                   </Flex>
                 </a>
               </Button> */}
-              <Button id="resume-button-1" mr={"20px"} onClick={handleResume} href="NB.pdf" download> <a id="resume-link-1" href="NB.pdf" target="_blank" download>Resume
+              
+              <Button className="nav-link resume" id="resume-button-1" mr={"20px"} onClick={handleResume} href="NB.pdf" download> <a id="resume-link-1" href="NB.pdf" target="_blank" download>Resume
             </a> </Button>
 
               <Button onClick={toggleColorMode}>
