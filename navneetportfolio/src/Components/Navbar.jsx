@@ -226,23 +226,7 @@ export default function Navbar() {
                 </a>
               </Button>
 
-              {/* <Button
-                className="nav-link resume"
-                onClick={handleResume}
-                id="resume-button-1"
-                colorScheme="teal"
-                size="md"
-              >
-                <a
-                  id="resume-link-1"
-                  href="https://drive.google.com/file/d/1TkITqlIqwESdtQMTCnGRpxr0i92FUHx7/view"
-                  target="_blank"
-                >
-                  <Flex alignItems={"center"} mr={"4px"} ml="10px">
-                    <Text mr="8px">Resume</Text> <BiDownload />
-                  </Flex>
-                </a>
-              </Button> */}
+            
               
               <Button className="nav-link resume" id="resume-button-1" mr={"20px"} onClick={handleResume} href="NB.pdf" download> <a id="resume-link-1" href="NB.pdf" target="_blank" download>Resume
             </a> </Button>

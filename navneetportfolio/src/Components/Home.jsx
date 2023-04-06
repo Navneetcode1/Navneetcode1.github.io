@@ -113,22 +113,7 @@ I have a clear, logical mind with a practical approach to problem-solving and a 
                       />
                     }
                   >
-                    {/* <Button
-                      id="resume-button-2"
-                      onClick={handleResume}
-                      colorScheme="teal"
-                      size="md"
-                    >
-                      <a
-                        id="resume-link-2"
-                        href="https://drive.google.com/file/d/1TkITqlIqwESdtQMTCnGRpxr0i92FUHx7/view"
-                        target="_blank"
-                      >
-                        <Flex alignItems={"center"} mr={"4px"} ml="10px">
-                          <Text mr="8px">Resume</Text> <BiDownload />
-                        </Flex>
-                      </a>
-                    </Button> */}
+                   
                      <Button id="resume-button-2" mr={"20px"} onClick={handleResume} href="NB.pdf" download> <a id="resume-link-2" href="NB.pdf" target="_blank" download>Resume
             </a> </Button>
                     <Flex justifyContent={"space-around"} w="25%">
