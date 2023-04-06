@@ -1,5 +1,6 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import handleResume from "./Resume"
 
 import {
   Container,
@@ -45,9 +46,9 @@ const Feature = ({ text, icon, iconBg }) => {
     </Stack>
   );
 };
-function handleResume() {
-  window.location.href = `https://drive.google.com/uc?export=download&id=1TkITqlIqwESdtQMTCnGRpxr0i92FUHx7`;
-}
+// function handleResume() {
+//   window.location.href = `https://drive.google.com/uc?export=download&id=1TkITqlIqwESdtQMTCnGRpxr0i92FUHx7`;
+// }
 
 export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode(false);
@@ -112,7 +113,7 @@ I have a clear, logical mind with a practical approach to problem-solving and a 
                       />
                     }
                   >
-                    <Button
+                    {/* <Button
                       id="resume-button-2"
                       onClick={handleResume}
                       colorScheme="teal"
@@ -120,14 +121,16 @@ I have a clear, logical mind with a practical approach to problem-solving and a 
                     >
                       <a
                         id="resume-link-2"
-                        href="https://drive.google.com/file/d/1TkITqlIqwESdtQMTCnGRpxr0i92FUHx7/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1TkITqlIqwESdtQMTCnGRpxr0i92FUHx7/view"
                         target="_blank"
                       >
                         <Flex alignItems={"center"} mr={"4px"} ml="10px">
                           <Text mr="8px">Resume</Text> <BiDownload />
                         </Flex>
                       </a>
-                    </Button>
+                    </Button> */}
+                     <Button id="resume-button-2" mr={"20px"} onClick={handleResume} href="NB.pdf" download> <a id="resume-link-2" href="NB.pdf" target="_blank" download>Resume
+            </a> </Button>
                     <Flex justifyContent={"space-around"} w="25%">
                       <Link
                         m="5px"

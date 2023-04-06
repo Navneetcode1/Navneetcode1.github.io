@@ -28,9 +28,7 @@ import "aos/dist/aos.css";
 import Zoom from "react-reveal/Zoom";
 import SideBar from "./SideBar"
 
-function handleResume() {
-  window.location.href = `https://drive.google.com/uc?export=download&id=1TkITqlIqwESdtQMTCnGRpxr0i92FUHx7`;
-}
+import handleResume from"./Resume"
 
 const NavLink = ({ children }) => (
   <Link
@@ -228,7 +226,7 @@ export default function Navbar() {
                 </a>
               </Button>
 
-              <Button
+              {/* <Button
                 className="nav-link resume"
                 onClick={handleResume}
                 id="resume-button-1"
@@ -237,14 +235,16 @@ export default function Navbar() {
               >
                 <a
                   id="resume-link-1"
-                  href="https://drive.google.com/file/d/1TkITqlIqwESdtQMTCnGRpxr0i92FUHx7/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1TkITqlIqwESdtQMTCnGRpxr0i92FUHx7/view"
                   target="_blank"
                 >
                   <Flex alignItems={"center"} mr={"4px"} ml="10px">
                     <Text mr="8px">Resume</Text> <BiDownload />
                   </Flex>
                 </a>
-              </Button>
+              </Button> */}
+              <Button id="resume-button-1" mr={"20px"} onClick={handleResume} href="NB.pdf" download> <a id="resume-link-1" href="NB.pdf" target="_blank" download>Resume
+            </a> </Button>
 
               <Button onClick={toggleColorMode}>
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
