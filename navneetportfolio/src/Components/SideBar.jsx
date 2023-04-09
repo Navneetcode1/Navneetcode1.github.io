@@ -46,7 +46,7 @@ export default function DrawerExample({ handleClickScroll, handleResume }) {
 
               <Link
                 id="resume-link-1"
-                href="Parbhat_Resume.pdf"
+                href="Navneet_Resume.pdf"
                 download
                 onClick={handleResume}
                 target="_blank"
