@@ -87,7 +87,7 @@ export default function Navbar() {
           m="auto"
           width={"94%"}
         >
-            <SideBar/>
+            {/* <SideBar/> */}
           <Box className="fontClass" w={{ base: "50%" }} fontSize={"35px"}>
             -------Navneet 
           </Box>
