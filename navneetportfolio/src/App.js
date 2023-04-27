@@ -26,15 +26,15 @@ function App() {
   return (
     <div style={{ marginTop: "0px" }}>
       <Box>
-        <Navbar/>
+        {/* <Navbar/> */}
         {/* <SideBar/> */}
-        <About />
-        <Home />
-        
-        <Skills />
+        {/* <About />
+        <Home /> */}
+        Resume in process
+        {/* <Skills />
         <Projects />
         <Stats />
-        <Contact />
+        <Contact /> */}
       </Box>
     </div>
   );
